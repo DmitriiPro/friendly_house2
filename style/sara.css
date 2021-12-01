@@ -1,0 +1,102 @@
+.sara {
+    padding: 15px 0 45px;
+}
+
+.container {
+    position: relative;
+}
+
+.container-sara {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 580px;
+}
+
+.sara__title {
+    font-family: "Comfortaa";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    z-index: 10;
+}
+
+.sara__title-orange {
+    color: var(--main-orange, #FF8A00);
+}
+
+.wrp {
+    display: flex;
+}
+
+.wrapper-text {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    gap: 81px;
+    margin-bottom: 25px;
+    align-self: flex-end;
+}
+
+.wrapper-dog::after {
+    content:"";
+    background-image: url('../img/sara-dog.png');
+    width: 580px;
+    height: 580px;
+    position: absolute;
+    top: 0;
+    right: 230px;
+}
+
+.wrapper-name-animals {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    padding-top: 100px;
+    z-index: 10;
+}
+
+.sara__block-btn {
+    padding-left: 100px;
+    z-index: 10;
+}
+
+.sara__btn {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--main-orange, #FF8A00);
+    text-transform: uppercase;
+    width: 180px;
+    height: 155px;
+    z-index: 9;
+}
+
+.sara__button {
+    padding-top: 111px;
+    background-image: url('../img/lapa.png');
+    background-repeat: no-repeat;
+    background-position: top 0 right 35px;
+    border: transparent;
+    align-items: center;
+    background-color: transparent;
+}
+
+.sara__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: "Helvetica Neue Cyr-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+    width: 180px;
+}
+
+.sara__item:not(:last-child) {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Helvetica Neue Cyr-Medium";
+	src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Medium"), url("../font/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+	url("../font/HelveticaNeueCyr-Medium.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+.header {
+    padding: 21px 0 15px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    border: transparent;
+}
+
+.header__link {
+    padding-left: 38px;
+    background-image: url('../img/header-phone.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: 500;
+    font-family:  "Helvetica Neue Cyr-Medium";
+    
+}
