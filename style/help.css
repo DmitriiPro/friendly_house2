@@ -34,35 +34,30 @@
 	font-style: normal;
 }
 
-.section-size {
-    padding: 100px 0;
-    /* padding-bottom: 100px; */
+.container {
+    /* position: relative; */
 }
-
-/* .container {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding-left: 130px;
-} */
 
 .help__title {
     font-family: "Comfortaa";
     font-size: 50px;
     line-height: 60px;
     font-weight: 400;
-    color: #ff8a00;
+    color: var( --main-orange, #ff8a00);
     text-align: center;
-    margin-bottom: 135px;
+    margin-bottom: 50px;
 }
 
 .help__list {
-    counter-reset: section; 
+    counter-reset: count 0; 
+    /* position: relative; */
     font-family: Comfortaa;
     font-size: 50px;
     line-height: 50px; 
     font-weight: 400;
-    color: #ff8a00;
+    color: var( --main-orange, #ff8a00);;
     list-style: none;
+    gap: 50px;
 }
 
 .help__item {
@@ -70,55 +65,100 @@
     font-size: 30px;
     line-height: 40px;
     font-weight: 400;
-    color: #282626;
+    color: var(--main-color, #282626);
 }
 
-.help__item:not(:last-child) {
-    margin-bottom: 130px;
+.item-block-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-one-left {
+    width: 480px;
+    padding-left: 100px;
+}
+
+.block-one {
+    width: 580px;
+    height: 298px;
+}
+.item-block-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-two-right {
+    width: 580px;
+    /* height: 303px; */
+    align-self: flex-end;
+    margin-bottom: 23px;
+}
+
+.block-two-left {
+    /* margin-right: 20px; */
+}
+
+.item-block-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-three-right {
+    width: 580px;
+    height: 382px;
+    
+}
+
+.block-three-left {
+    padding-left: 100px;
+}
+
+.help__item {
+    margin-bottom: 50px;
 }   
 
-.help__item::before {
-    counter-increment: section;            
-    content: counter(section);
-    /* position: absolute; */
-    /* left: 80px; */
-    position: relative;
-    top: 46px;
-    left: -50px;
+.help__item {
+    /* position: relative; */
+}
+
+.title::before {
+    counter-increment: count;            
+    content: counter(count); 
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 10px 20px;
+    position: relative; 
+    top: 0px;
+    left: -40px; 
     font-family: Comfortaa;
     font-size: 50px;
     line-height: 50px;
     font-weight: 400;
-    color: #ff8a00;
-    /* position: relative; */
-    /* left: -50px;
-    top: 50px; */
-    /*предыдущий вариант через релатив, но оставался отступ сверху и чтобы его не было прописываем position: absolute */
-    /*так как отступ слева 130px а по макету от Финансово до цифры стоит где то 50px , то установил 80px слева итого минус 50*/
+    color: var( --main-orange, #ff8a00);
+    /* padding-left: 100px; */
+    
+    
 }
 
 .help__subtitle-finance {
-    font-family: "Helvetica Neue Cyr-Roman";
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 400;
-    margin-bottom: 36px;
+    
 }
 
 .help__subtitle-volunteer {
-    font-family: "Helvetica Neue Cyr-Roman";
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 400;
-    margin-bottom: 80px;
-}
+    padding-left: 100px;
+} 
 
-.help__subtitle-opekun {
-    font-family: "Helvetica Neue Cyr-Roman";
+.title {
+    font-family: "Helvetica Neue Cyr-Medium";
     font-size: 30px;
     line-height: 40px;
-    font-weight: 400;
-    margin-bottom: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .help__element {
@@ -129,11 +169,13 @@
 }
 
 .help__element_finance {
-    width: 379px;
+    /* width: 379px; */
+
 }
 
 .help__element_volunteer {
-    width: 570px;
+    /* width: 580px;
+    height: 303px; */
 }
 
 .help__element_opekun {
@@ -145,4 +187,34 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
+}
+
+
+/* кнопка  */
+
+.help__block-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.help__btn {
+    font-family: "Helvetica Neue Cyr-Medium";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--main-orange, #FF8A00);
+    text-transform: uppercase;
+    width: 180px;
+    height: 155px;
+    
+}
+
+.help__button {
+    padding-top: 111px;
+    background-image: url('../img/lapa.png');
+    background-repeat: no-repeat;
+    background-position: top 0 right 35px;
+    border: transparent;
+    align-items: center;
+    background-color: transparent;
 }
