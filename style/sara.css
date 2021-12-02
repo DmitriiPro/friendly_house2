@@ -20,6 +20,7 @@
     font-weight: normal;
     font-size: 60px;
     line-height: 60px;
+    width: 530px;
     z-index: 10;
 }
 
@@ -59,8 +60,17 @@
 }
 
 .sara__block-btn {
-    padding-left: 100px;
+    display: flex;
+    justify-content: center;
     z-index: 10;
+}
+
+.sara__element {
+    font-family:  "Helvetica Neue Cyr-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .sara__btn {
@@ -85,7 +95,7 @@
     background-color: transparent;
 }
 
-.sara__item {
+.btn-animals {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -95,8 +105,39 @@
     font-size: 20px;
     line-height: 26px;
     width: 180px;
+    border:transparent;
+    background-color: transparent;
 }
 
 .sara__item:not(:last-child) {
     margin-bottom: 30px;
+}
+
+/* состояния */
+
+.btn-animals {
+    transition: border 0.200s ease-in, color 0.200s ease-in;
+
+}
+
+.btn-animals:hover {
+    border: 1px solid var(--main-orange, #FF8A00);
+}
+
+.btn-animals:active {
+    border: 1px solid var(--main-orange, #FF8A00);
+    color: var(--main-orange, #FF8A00);
+}
+
+/* кнопка лапа */
+.sara__block-btn {
+    transition: all 0.200s ease-in, color 0.200s ease-in;
+}
+
+.sara__block-btn:hover {
+    filter: opacity(0.9);
+}
+
+.sara__block-btn:active {
+    filter: opacity(0.8);
 }

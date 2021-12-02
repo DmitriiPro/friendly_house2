@@ -30,3 +30,22 @@
     font-family:  "Helvetica Neue Cyr-Medium";
     
 }
+
+/* состояния */
+
+/* кнопка меню */
+
+.header__button {
+    transition: all 0.200s ease-in;
+    
+}
+
+.header__button:hover {
+    filter: opacity(0.5);
+}
+
+.header__button:active {
+    background: transparent;
+    filter: opacity(1);
+}
+

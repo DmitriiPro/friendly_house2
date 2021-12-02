@@ -15,9 +15,11 @@
     <header class="header">
         <div class="container">
             <nav class="header__nav">
-                <button class="header__menu">
-                    <img src="img/header-menu.png" alt="" class="header__menu-img">
-                </button>
+                <div class="header__button">
+                    <button class="header__menu">
+                        <img src="img/header-menu-btn.svg" alt="три полоски" class="header__menu-img">
+                    </button>
+                </div>
                 <img src="img/header-logo-friendly.png" alt="friendly house" class="header__logo">
                 <a href="tel:8(849)300-39-57" class="header__link">8 (849) 300 - 39 -57</a>
             </nav>
@@ -28,8 +30,8 @@
         <section class="sara">
             <div class="container container-sara">
                 <div class="wrapper-text wrp wrapper-dog">
-                    <h2 class="sara__title"><span class="sara__title-orange">Сара ждёт,</span> <br>
-                        когда найдётся<br> 
+                    <h2 class="sara__title"><span class="sara__title-orange">Сара ждёт,</span> 
+                        когда найдётся 
                         её человек</h2>
                     <div class="sara__block-btn">
                         <button class="sara__btn sara__button">Жми на лапку, чтобы помочь!</button>
@@ -39,21 +41,28 @@
                 <div class="wrapper-name-animals wrp">
                     <ul class="sara__list">
                         <li class="sara__item boris">
-                            
-                            <img src="img/cat-boris.png" alt="" class="boris">
-                            <p class="sara__element">Борис</p>
+                            <button class="btn-animals">
+                                <img src="img/cat-boris.png" alt="" class="boris">
+                                <span class="sara__element">Борис</span>
+                            </button>
                         </li>
                         <li class="sara__item lui">
-                            <img src="img/dog-lui.png" alt="" class="lui">
-                            <p class="sara__element">Луи</p>
+                            <button class="btn-animals">
+                                <img src="img/dog-lui.png" alt="" class="lui">
+                                <span class="sara__element">Луи</span>
+                            </button>
                         </li>
                         <li class="sara__item piter">
-                            <img src="img/rabbit-piter.png" alt="" class="piter">
-                            <p class="sara__element">Питер</p>
+                            <button class="btn-animals">
+                                <img src="img/rabbit-piter.png" alt="" class="piter">
+                                <span class="sara__element">Питер</span>
+                            </button>
                         </li>
                         <li class="sara__item kenny">
-                            <img src="img/cat-kenny.png" alt="" class="kenny">
-                            <p class="sara__element">Кенни</p>
+                            <button class="btn-animals">
+                                <img src="img/cat-kenny.png" alt="" class="kenny">
+                                <span class="sara__element">Кенни</span>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -151,9 +160,9 @@
                             <label class="form-field__label" for="useremail">E-mail</label>
                             <input class="form-field__input" type="email" name="email" required id="useremail">
                         </div>
-                        
-                        <button class="form__btn form__btn_img" type="submit">Отправить</button>
-                        
+                        <div class="form__btn-lapa">
+                            <button class="form__btn form__btn_img" type="submit">Отправить</button>
+                        </div>
                     </form>
 
                     
