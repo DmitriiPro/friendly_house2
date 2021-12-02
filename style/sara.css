@@ -1,5 +1,6 @@
 .sara {
     padding: 15px 0 45px;
+    background: #FFFFFF;
 }
 
 .container {
@@ -7,7 +8,7 @@
 }
 
 .container-sara {
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -15,6 +16,17 @@
 }
 
 .sara__title {
+    font-family: "Comfortaa-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    width: 410px;
+    z-index: 10;
+}
+
+.sara__title-orange {
+    color: var(--main-orange, #FF8A00);
     font-family: "Comfortaa";
     font-style: normal;
     font-weight: normal;
@@ -22,10 +34,6 @@
     line-height: 60px;
     width: 530px;
     z-index: 10;
-}
-
-.sara__title-orange {
-    color: var(--main-orange, #FF8A00);
 }
 
 .wrp {

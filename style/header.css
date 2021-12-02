@@ -19,6 +19,7 @@
 
 .header__menu {
     border: transparent;
+    background: transparent;
 }
 
 .header__link {
