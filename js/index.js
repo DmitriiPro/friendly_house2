@@ -1,3 +1,3 @@
-import { sara } from './sara';
+import { sara } from './sara.js';
 
 sara();

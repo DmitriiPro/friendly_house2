@@ -120,6 +120,51 @@
     margin-bottom: 30px;
 }
 
+/* для модального окна */
+.sara {
+    z-index: 1;
+    position: relative;
+}
+
+.sara-container {
+    display: none;
+    
+}
+
+.form-modal{
+    position: relative;
+}
+
+.modal-order {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 310px;
+}
+
+.form__modal-knopa {
+    
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: inherit;
+}
+
+.form__modal-knopa {
+    transition: all 0.200ms ease-in;
+}
+
+.form__modal-knopa:hover {
+    opacity: 0.8;
+}
+
+.form__modal-knopa:active {
+    opacity: 1;
+}
+
+
 /* состояния */
 
 .btn-animals {
