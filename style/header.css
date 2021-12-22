@@ -11,6 +11,7 @@
     z-index: 1;
     padding: 21px 0 15px;
     background: #FFFFFF;
+    position: relative;
 }
 
 .header__nav {
@@ -22,6 +23,7 @@
 .header__menu {
     border: transparent;
     background: transparent;
+    
 }
 
 .header__link {
