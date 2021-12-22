@@ -8,16 +8,16 @@
 }
 
 .header {
-    z-index: 1;
     padding: 21px 0 15px;
     background: #FFFFFF;
-    position: relative;
 }
 
 .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    
 }
 
 .header__menu {

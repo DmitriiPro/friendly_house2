@@ -122,11 +122,6 @@
 
 /* стили для модального окна */
 
-.sara {
-    z-index: 1;
-    position: relative;
-}
-
 .sara-container {
     display: none;
 }
@@ -145,12 +140,11 @@
 .modal-order {
     z-index: 52;
     position: absolute;
-    top: 0;
-    right: 600px;
+    top: 100px;
+    left: 120px;
 }
 
 .sara__modal-knopa {
-    
     border: none;
     background-color: transparent;
     position: absolute;
