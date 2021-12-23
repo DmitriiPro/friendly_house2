@@ -35,10 +35,6 @@
     z-index: 10;
 }
 
-.wrp {
-    display: flex;
-}
-
 .wrapper-text {
     display: flex;
     flex-direction: column;
@@ -46,6 +42,7 @@
     gap: 81px;
     margin-bottom: 25px;
     align-self: flex-end;
+    padding-left: 100px;
 }
 
 .wrapper-dog::after {
@@ -55,15 +52,16 @@
     height: 580px;
     position: absolute;
     top: 0;
-    right: 230px;
+    right: 100px;
 }
 
 .wrapper-name-animals {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     margin-right: 100px;
     padding-top: 100px;
     z-index: 10;
+    display: none;
 }
 
 .sara__block-btn {
