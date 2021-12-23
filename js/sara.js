@@ -4,8 +4,13 @@ const sara = () => {
     const modalClose = $('.sara__modal-knopa');
     const modalOrder = $('.modal-order');
     const modalTitle = $('.sara__subtitle'); // нашел заголовок в форме
+    const modalBtnHelp = $('.help__btn-modal'); // кнопка из блока help
     
     modalBtn.on('click', function() {  // открывает окно
+        modalOrder.show(500);
+    });
+
+    modalBtnHelp.on('click', function() {  // открывает окно
         modalOrder.show(500);
     });
 
